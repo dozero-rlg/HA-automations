@@ -75,7 +75,7 @@ condition:
   - condition: numeric_state
     entity_id: sun.sun
     attribute: elevation
-    below: '-2.0'
+    below: '88'
 action:
   - choose:
       - conditions:
