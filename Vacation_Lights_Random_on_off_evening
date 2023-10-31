@@ -1,5 +1,5 @@
 blueprint:
-  name: Randomised Light at Night
+  name: Randomised Light testing
   description: Randomly toggles a light at night within set parameters
   domain: automation
   input:
