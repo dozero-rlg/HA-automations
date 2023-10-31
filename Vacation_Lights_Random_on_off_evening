@@ -1,5 +1,5 @@
 blueprint:
-  name: Randomised Light testing
+  name: Randomised Light at night
   description: Randomly toggles a light at night within set parameters
   domain: automation
   input:
@@ -11,7 +11,6 @@ blueprint:
           domain:
             - light
             - switch
-            - area
     override_switch_entity:
       name: Manual Override Switch
       description: The Manual Override switch disables ALL automations when on. This automation will only run if Manual Override is off.
@@ -75,7 +74,7 @@ condition:
   - condition: numeric_state
     entity_id: sun.sun
     attribute: elevation
-    below: '88'
+    below: '-2'
 action:
   - choose:
       - conditions:
